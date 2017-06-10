@@ -166,16 +166,16 @@ var hammertime = new Hammer.Manager(document, {
     ]
 });
 hammertime.on('swiperight', function() {
-    onToRightEventHandler();
+    onToRightEventHander();
 });
 hammertime.on('swipeup', function () {
-    onToUpEventHandler();
+    onToUpEventHander();
 });
 hammertime.on('swipeleft', function () {
-    onToLeftEventHandler();
+    onToLeftEventHander();
 });
 hammertime.on('swipedown', function () {
-    onToDownEventHandler();
+    onToDownEventHander();
 });
 //完成向右移动并合并方块
 function moveCellToRight(){
