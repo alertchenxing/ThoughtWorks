@@ -38,7 +38,7 @@ function addRandomCell(){
 		y = generateRandomNumber();
 	}
 	var twoOrfour = Math.random();
-	if(twoOrfour < 0.5){
+	if(twoOrfour < 0.7){
 		grid[x][y] = 2;
 	}else{
 		grid[x][y] = 4;
@@ -91,7 +91,7 @@ function drawCells(x, y){
 	if(grid[x][y] != 0){
 		//画出坐标上的数字
 		var number = new PIXI.Text(grid[x][y],{
-			fontSize:50
+			fontSize:40
 		});
 		number.anchor.set(0.5);
 		number.x = 75/2 + app.renderer.width / 8 + y * 77;
