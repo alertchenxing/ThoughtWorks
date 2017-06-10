@@ -14,14 +14,14 @@ var basicText = new PIXI.Text('2048',{
 //锚点设置在中间,方便定位
 basicText.anchor.set(0.5);
 basicText.x = app.renderer.width / 2;
-basicText.y = app.renderer.height / 4;
+basicText.y = app.renderer.height / 8;
 app.stage.addChild(basicText);
 var scoreText = new PIXI.Text('Score:'+score,{
 	fontSize:50
 });
 scoreText.anchor.set(0.5);
 scoreText.x = app.renderer.width / 2;
-scoreText.y = app.renderer.height / 10 * 9;
+scoreText.y = app.renderer.height / 4;
 app.stage.addChild(scoreText);
 //设置游戏界面数据结构为二维数组，默认值为0
 var grid = [];
